@@ -1,0 +1,154 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 12px 80px;
+    background: rgba(66, 71, 105, 0.2);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    size: 2%;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #F9B17A;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 56px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -12px; 
+    width: 100%;
+    height: 8px;
+    background: #F9B17A;
+    border-radius: 4px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .1s;
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.FarilBintang {
+    position: absolute;
+    width: 955px;
+    height: 136px;
+    left: 482px;
+    top: 356px;
+
+    font-family: 'Castle Begale';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 132px;
+    /*font-variant-position: super;*/
+    line-height: 136px;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    color: #ffffff;
+    animation: FarilBintang 1.4s cubic-bezier(0.770, 0.000, 0.175, 1.000) ;
+    
+}
+@keyframes FarilBintang {
+    0% {
+      letter-spacing: -0.5em;
+      filter: blur(12px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    100% {
+        filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+
+.profesi {
+    position: absolute;
+    width: 361px;
+    height: 98px;
+    left: 779px;
+    top: 532px;
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 680;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #ffdefd;
+
+}
+
+.penjelasanUtama {
+    
+    /* Pada Web ini saya akan menjelaskan tentang portofolio saya */
+    position: absolute;
+    width: 435px;
+    height: 60px;
+    left: 742px;
+    top: 650px;
+
+    /* Sans Serif/paragraf/Quicksand 24 */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 00;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+
+#myVideo {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 110%;
+}
+
+  
